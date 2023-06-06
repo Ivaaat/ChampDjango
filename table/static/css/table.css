@@ -1,0 +1,154 @@
+body { 
+    margin:0;
+    padding:0;
+    font-family:helvetica, sans-serif; 
+}
+
+
+a { 
+    display: flex;
+    float: left;
+    color:black;
+    text-decoration:none; 
+    font-family: Arial;
+    font-size: 18px;
+    margin-right: 40px;
+    margin-top: 10px;
+    text-align: center;
+    vertical-align:text-bottom;
+
+}
+
+h1 {
+    margin: 10px; 
+    color: red;
+    align-items: center;
+
+
+}
+
+h2 {
+    float: left;
+    font-weight:normal;
+    margin:30px 0 0;
+    align-items: center;
+
+}
+
+#header {
+    font-size: 20px;
+    height: 200px;
+    background: #c5c359;
+    color: red;
+    
+    
+}
+
+
+
+#sidebar { 
+    float:right;
+    width:30%;
+    padding:10px;
+    background:#efefef; 
+    height:100%;
+}
+
+/* .num {
+    font-size: 20px;
+} */
+
+p.team {
+    color: #333;
+}
+
+table {
+    color: var(--primary-2);
+    font: 13px/18px Roboto Condensed,Arial Narrow,sans-serif;
+    max-width: 60%;
+    width: 100%
+}
+
+/* table thead td  {
+    border-bottom: #fdf3db
+} */
+
+table body tr  {
+    border-bottom: #fdf3db
+}
+
+table a {
+    color: var(--primary-2)
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    /* background-color: green; */
+    /* object-fit: none; */
+}
+
+#img_small {
+    width: 25px;
+    height: 25px;
+}
+
+
+p.stat { 
+    color:#911b1b;
+    font-family: georgia, serif;
+    font-size: 15px;
+    font-style: arial; 
+    line-height: 50px;
+}
+
+/* pagination */
+.pagination { 
+    margin:40px 0; 
+    font-weight:bold;
+}
+
+/* forms */
+label { 
+    float:left;
+    clear:both;
+    color:#333;
+    margin-bottom:4px; 
+}
+input, textarea { 
+    clear:both;
+    float:left;
+    margin:0 0 10px;
+    background:#ededed;
+    border:0;
+    padding:6px 10px;
+    font-size:12px;
+}
+input[type=submit] {
+    font-weight:bold;
+    background:#00abff;
+    color:#fff;
+    padding:10px 20px;
+    font-size:14px;
+    text-transform:uppercase; 
+}
+.errorlist { 
+    color:#cc0033;
+    float:left;
+    clear:both;
+    padding-left:10px; 
+}
+
+/* comments */
+.comment {
+    padding:10px;
+}
+.comment:nth-child(even) {
+    background:#efefef;
+}
+.comment .info {
+    font-weight:bold;
+    font-size:12px;
+    color:#666;
+}
+

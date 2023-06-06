@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}{{ team.name_team }}  {% endblock %}
+
+{% block content %}
+<h1> Очков: {{ team.points}}</h1>
+<p class="stat">
+    Всего игр: {{ team.tours }} <br />
+    Побед: {{ team.wins }} <br />
+    Поражений: {{ team.loses }} <br />
+    Ничьи: {{team.draw}} <br />
+</p>
+<img src={{team.logo}}
+{% endblock %}

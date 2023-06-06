@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}{{champs.name_champ}}{% endblock %}
+{% block content %}
+    <h1>{{champs.name_champ}}</h1>
+    <img src="{% static "pic/"%}{{champs.logo}}" alt="{{champs.name_champ}}" width="200" height="200" 
+    <br />
+    <table>
+        <caption><b>Таблица {{champs.name_champ}}</b></caption>
+        <thead>
+            <tr>
+                <th>№</th> <th>Название</th> <th>О</th> <th>И</th> <th>В</th> <th>Н</th> <th>П</th>
+            </tr>
+        {% for team in teams %}
+        <tbody>
+            <tr>
+                <td>
+                    <p class="num"  >
+                        {{ forloop.counter}} 
+                    </p>
+                </td>
+                <td>
+                    <a class="team_name" href="{{team.get_absolute_url }}"> 
+                        <img id="img_small" src={{team.logo}}
+                        <span class="table_item" >   {{ team.name_team }}  </span>
+                    </a> 
+                </td>
+                <td>
+                    <p> {{ team.points }} </p>
+                </td>
+                <td>
+                    <p> {{ team.games }} </p>
+                </td>
+                <td>
+                    <p> {{ team.wins}} </p>
+                </td>
+                <td>
+                    <p> {{ team.draw}} </p>
+                </td>
+                <td>
+                    <p> {{ team.loses}} </p>
+                </td>
+
+            </tr>
+        </tbody>
+        {% endfor %}
+    </table>
+{% endblock %}

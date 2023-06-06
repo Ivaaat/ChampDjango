@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Champs{% endblock %}
+{% block header %} 
+    {% for champ in champs %}
+        
+        <a href="{{champ.get_absolute_url }}">
+            <img src="{% static "pic/"%}{{champ.logo}}" alt="{{champ.name_champ}}"
+            <span > {{ champ.name_champ }}  </span>
+        </a>
+
+{% endfor %}
+{% endblock %}
+
